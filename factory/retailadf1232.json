@@ -1,6 +1,12 @@
 {
 	"name": "retailadf1232",
 	"properties": {
+		"globalParameters": {
+			"gp_sql_server": {
+				"type": "string",
+				"value": "0"
+			}
+		},
 		"trustModeClaimForMi": {
 			"value": "Enabled",
 			"editable": true
