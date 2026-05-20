@@ -1,21 +1,34 @@
 {
-	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-	"contentVersion": "1.0.0.0",
-	"parameters": {
-		"factoryName": {
-			"value": "retailadf1232"
-		},
-		"LS_ADLSGen2_Retail_properties_typeProperties_url": {
-			"value": "https://stretailkart123.dfs.core.windows.net"
-		},
-		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
-			"value": "https://kv-retailkart.vault.azure.net"
-		},
-		"LS_AzureSQL_Retail_properties_typeProperties_server": {
-			"value": "sqldbretailkart.database.windows.net"
-		},
-		"LS_AzureSQL_Retail_properties_typeProperties_database": {
-			"value": "sqldb-retailkart"
-		}
-	}
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "retailadf1232"
+        },
+        "LS_ADLSGen2_Retail_properties_typeProperties_url": {
+            "value": "https://stretailkart123.dfs.core.windows.net"
+        },
+        "LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+            "value": "https://kv-retailkart.vault.azure.net"
+        },
+
+        "LS_AzureSQL_Retail_properties_typeProperties_server": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/UpdAzvmnag_1777788729179/resourceGroups/rg-retail-dataeng/providers/Microsoft.KeyVault/vaults/kv-retailkart"
+                },
+                "secretName": "sql-server-name"
+            }
+        },
+
+        "LS_AzureSQL_Retail_properties_typeProperties_database": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/
+UpdAzvmnag_1777788729179/resourceGroups/rg-retail-dataeng/providers/Microsoft.KeyVault/vaults/kv-retailkart"
+                },
+                "secretName": "sql-database-name"
+            }
+        }
+    }
 }
