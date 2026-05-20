@@ -1,0 +1,26 @@
+{
+	"name": "PL_SQL_Incremental_Load_To_ADLS",
+	"properties": {
+		"parameters": {
+			"sourceSchemaName": {
+				"type": "string"
+			},
+			"sourceTableName": {
+				"type": "string"
+			},
+			"watermarkColumn": {
+				"type": "string"
+			},
+			"targetContainer": {
+				"type": "string"
+			},
+			"targetFolderPath": {
+				"type": "string"
+			},
+			"targetFileName": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
