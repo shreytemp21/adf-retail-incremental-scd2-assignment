@@ -24,8 +24,7 @@
         "LS_AzureSQL_Retail_properties_typeProperties_database": {
             "reference": {
                 "keyVault": {
-                    "id": "/subscriptions/
-UpdAzvmnag_1777788729179/resourceGroups/rg-retail-dataeng/providers/Microsoft.KeyVault/vaults/kv-retailkart"
+                    "id": "/subscriptions/UpdAzvmnag_1777788729179/resourceGroups/rg-retail-dataeng/providers/Microsoft.KeyVault/vaults/kv-retailkart"
                 },
                 "secretName": "sql-database-name"
             }
