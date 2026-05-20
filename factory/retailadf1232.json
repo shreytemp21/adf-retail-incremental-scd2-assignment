@@ -9,6 +9,10 @@
 			"gp_sql_db": {
 				"type": "string",
 				"value": "0"
+			},
+			"gp_sql_user": {
+				"type": "string",
+				"value": "0"
 			}
 		},
 		"trustModeClaimForMi": {
